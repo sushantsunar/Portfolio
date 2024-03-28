@@ -1,0 +1,173 @@
+@media screen and (max-width: 1200px) {
+  
+    #homepage .profile-container {
+        height: 60vh;
+        overflow: hidden;
+    }
+
+    .profile-info {
+        width: 100%;
+        height: 100%;
+
+        justify-content: start;
+        padding: 2rem 0rem 15rem 7rem;
+
+    }
+
+    .profile-pic img {
+        height: 410px;
+        width: 410px;
+    }
+
+    .profile-info p {
+        font-size: 2rem;
+    }
+
+    .intro-heading {
+        font-size: 3.4rem;
+    }
+
+    #homepage .profile-container {
+        padding-top: 2rem;
+    }
+
+    .profile-pic {
+        padding: 0rem;
+    }
+
+
+    .skill-container {
+        display: grid;
+        grid-template-columns: repeat(2, 400px);
+        /* grid-template-columns: repeat(1,400px ); */
+        justify-content: center;
+        row-gap: 1.5rem;
+        padding-left: 20px;
+
+        height: 100%;
+    }
+
+    .project-container{
+        grid-template-columns: repeat(2, 442px);
+        row-gap: 6rem;
+     
+    }
+    .project-image:first-child{
+        position: relative;
+    
+    }
+    .project-items:nth-child(2){
+     position: relative;
+     top: 0px;
+    }
+    
+    .project-items:nth-child(3){
+        position: relative;
+        top: 0px; 
+        left: 50%; 
+    }
+}
+
+@media screen and (max-width: 889px) {
+    .navbar{
+        display: none;
+    }
+
+    .header .button{
+        display: none;
+    }
+
+    .header .toggle{
+        display: inline-block;
+        padding: 0.4rem 2rem 0 0;
+    }
+    .header .toggle .fa-bars {
+        display: inline-block;
+        font-size: 3rem;
+        padding: 0.7rem;
+        background-color: #000000;
+        border-radius: 2px;
+        border: 1px solid var(--text-color);
+        cursor: pointer;
+    }
+
+    
+.dropdown_menu{
+    display: block;
+    position: absolute;
+    right: 1.4rem;
+    top: 76px;
+    height: 0;
+
+    background: rgb(0 0 0 / 77%);
+    z-index: 111;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    width: 0;
+
+}
+
+.dropdown_menu.open {
+    height: 170px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  
+}
+.dropdown_menu a{
+    font-size: 2em;
+    text-align: center;
+}
+
+    #homepage .profile-container {
+        display: grid;
+        min-height: 100vh;
+        overflow: visible;
+    }
+
+
+    .profile-info {
+        width: 100vw;
+        height: 100%;
+        justify-content: start;
+        padding: 0rem 0rem 0rem 4rem;
+
+    }
+
+    .profile-pic img {
+        height: 400px;
+        width: 400px;
+    }
+
+    .profile-pic {
+        align-items: center;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .skill-container {
+        display: grid;
+        /* grid-template-columns: repeat(3, 400px); */
+        grid-template-columns: repeat(1, 400px);
+        justify-content: center;
+        row-gap: 1.5rem;
+        padding-left: 20px;
+        min-height: 100%;
+    }
+  
+    .myskill-heading{
+        margin-top: 4rem;
+    }
+    .project-container{
+     grid-template-columns: repeat(1, 442px);
+        row-gap: 6rem;
+       
+     
+    }
+    .project-items:nth-child(3){ 
+        left: 0%; 
+    }
+}
