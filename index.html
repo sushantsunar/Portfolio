@@ -11,6 +11,7 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="index.js"></script>
   </head>
 
   <body>
@@ -22,9 +23,9 @@
         <a href="#project">Project</a>
         <a href="#contact_us">Contact Us</a>
       </nav>
-      <div class="button">
+      <!-- <div class="button">
         <a href="./Form.html"><button id="btn" >Sign Up</button></a>
-      </div>
+      </div> -->
 
       <div class="toggle">
         <i class="fa-solid fa-bars"></i>
@@ -49,7 +50,7 @@
           <h1 class="intro-heading">I'am</h1>
           <h1 class="intro-heading">Sushant Sunar</h1>
           <p>
-            Enthugist web developer proficient in Java backend and frontend
+            Enthusiast web developer proficient in Java backend and frontend
             technologies. Crafts visually stunning interfaces using HTML, CSS,
             and JavaScript, ensuring seamless, high-performance digital
             solutions with efficiency and precision.
@@ -100,10 +101,10 @@
         <div class="skill items">
           <div class="skill-bar">
             <div class="skill-bar-fill">
-              <img src="./pictures/figma-logo-0.png" alt="#FigmaImage" />
+              <img src="./pictures/spring-boot.webp" alt="#FigmaImage" />
             </div>
           </div>
-          <div class="skill-name"><a href="#">Figma</a></div>
+          <div class="skill-name"><a href="#">Spring Boot</a></div>
         </div>
 
         <div class="skill items">
@@ -132,7 +133,7 @@
       <div class="project-container">
         <div class="project-items">
           <div class="project-image">
-           <img src="./pictures/fitness.PNG" alt="#projectimage" /></a> 
+         <a href="https://sushantsunar.github.io/Fitness-Website/" target="_blank"> <img src="./pictures/fitness.PNG" alt="#projectimage" /></a> 
           <div class="project_content">
             <h2>Fitness Website</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, velit enim. Inventore</p>
@@ -166,13 +167,15 @@
       </div>
     </section>
 
+
+    <!-- contact_us page -->
     <section id="contact_us">
       <div class="contact-header">Contact Us
 
       </div>
       <h3>Enquiry Form</h3>
       <div class="contact-form">
-          <form action="action_page.php"><div class="form-item">
+          <form action="thankyou.html" onsubmit="return validate()"><div class="form-item">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Your name">
           </div>
@@ -189,11 +192,11 @@
             <textarea id="enquiry" name="enquiry" placeholder="Write something.." style="height: 100px;"></textarea>
           </div>
           <div class="form-item">
-            <input type="submit" value="Submit" id="submit">
+            <input type="submit" value="submit" id="submit">
         </div>
           </form>
         </div>
-        <footer>
+        <!-- <footer>
           <div class="footer-items">
               <h2>Contact</h2>
   
@@ -223,7 +226,7 @@
               <a href="./Form.html"><button>Sign Up</button></a>
               
           </div>
-        </footer>
+        </footer> -->
         <p id="copyright">Copyright &copy;2024 | Design By Sushant Sunar</p>
     </section>
     <script src="index.js"></script>

@@ -10,3 +10,29 @@ const toggleBtn = document.querySelector('.toggle');
                 ? 'fa-solid fa-xmark'
                 : 'fa-solid fa-bars'
         }
+
+        function validate() {
+            let name = document.getElementById('name').value;
+            let number = document.getElementById('number').value;
+            let address = document.getElementById('address').value;
+            let enquiry = document.getElementById('enquiry').value;
+            if (name == ""||
+                number == ""||
+                address ==""||
+                enquiry == "") {
+                alert("Field are mandatory")
+                return false;
+            }
+            else if (isNaN(number)) {
+                alert("Enter a number")
+                return false;
+            }
+            else if(number.length!=10){
+                alert("Enter Valid Number")
+                return false;
+            }
+            else{
+                true;
+            }
+
+        }
